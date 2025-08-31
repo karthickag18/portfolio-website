@@ -1,0 +1,395 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  color: #fff;
+  background: #111;
+  opacity: 0.5;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+}
+
+.hero img {
+  width: 300px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+/* Skills */
+
+#skills {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically (if full screen height) */
+  flex-direction: column;         /* optional: make section fill full height */
+  text-align: center;
+}
+
+.skills-container {
+  width: 60%;               
+  max-width: 800px;         
+  margin: auto;             
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skills {
+  padding: 60px 10%;
+  display: flex;
+  align-items: center;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.skill {
+  padding: 15px;
+  border: 3px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skill h3 {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.progress-bar {
+  background: #111;
+  height: 100%;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #fff;
+  text-align: right;
+  padding-right: 5px;
+  line-height: 8px; /* vertically center text */
+}
+
+#skills ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#skillList li {
+  display: none; /* hide all skills initially */
+}
+
+#skills ul {
+  list-style-type: none;   /* remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+#skills ul li {
+  background: transparent;   /* light box color */
+  border: 1px solid rgba(0,0,0,0.1);  /* border for box */
+  border-radius: 8px;      /* rounded corners */
+  padding: 12px 20px;      /* space inside box */
+  margin-bottom: 10px;     /* space between boxes */
+  width: 100%;              /* large width (adjust as needed) */
+  max-width: 600px;        /* optional: limit max size */
+  text-align: left;        /* keep text aligned left */
+  font-size: 18px;         /* larger text */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* soft shadow */
+}
+
+#skillList li:nth-child(-n+3) {
+  display: list-item; /* show only first 3 */
+}
+
+#toggleBtn {
+  margin-top: 10px;
+  padding: 15px 25px;
+  border: 3px solid rgba(0,0,0,0.1);
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#toggleBtn:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+
+
+/* Study Section */
+
+.education {
+  padding: 40px;
+  text-align: center;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.edu-card {
+  background: transparent;
+  border: 3px solid rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.edu-card h3 {
+  margin-bottom: 8px;
+}
+
+.edu-card p {
+  margin: 5px 0;
+}
+
+
+
+/* Sections */
+.about, .projects, .contact {
+  padding: 60px 10%;
+}
+
+.about h2, .projects h2, .contact h2 {
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+#projects h2{
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+#projects {
+  text-align: center;
+  padding: 40px;
+}
+
+.slider-container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden; 
+  border-radius: 10px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project-card {
+  min-width: 100%; /* each project takes full width */
+  padding: 40px;
+  background:transparent;
+  border: 1px solid rgba(0,0,0,0.1);
+  font-size: 17px;
+}
+
+.project-card a{
+  color: #111;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.prev, .next {
+  margin: 10px;
+  padding: 10px 20px;
+  border: 3px solid rgba(0,0,0,0.1);
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+
+/* Contact Section */
+.contact {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contact-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-btn:hover {
+  background: #f39c12;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #111;
+  opacity: 0.5;
+  padding: 20px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Menu toggle button (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Menu button (only visible on mobile) -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h2>Hello, I'm Karthick 👋</h2>
+            <p>Full Stack Software Developer | Building Web & Data Solutions.</p>
+        </div>
+        <img src="karthick.png" alt="My Photo">
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Junior Software Developer with a passion for creating simple and effective digital solutions. I have
+            experience in developing small-scale websites and working on Power BI projects, where I gained valuable
+            skills in data visualization and reporting. Along with my technical skills, I am also proficient in MS
+            Office tools, which help me in documentation, presentation, and productivity. I enjoy learning new
+            technologies and continuously improving my skills to grow into a full-stack developer in the future.
+        </p>
+    </section>
+
+    <!-- Education -->
+
+    <section id="education" class="education">
+        <h2>My Education</h2>
+        <div class="education-container">
+            <div class="edu-card">
+                <h3>Master of Computer Science</h3>
+                <p><strong>SRM Institute of Science and Technology</strong> | 2025 – 2027</p>
+                <p>Currently pursuing my degree in Computer Science with focus on software development, data analysis,
+                    and web technologies.</p>
+            </div>
+
+            <div class="edu-card">
+                <h3>Bachelor of Computer Science</h3>
+                <p><strong>TKS College of Arts & Science</strong> | 2022 – 2025</p>
+                <p>Completed Bachelor of Science in Computer Science with a strong foundation in programming, databases, and software development.</p>
+            </div>
+
+            <div class="edu-card">
+                <h3>Higher Secondary (12th Grade)</h3>
+                <p><strong>Hindu Higher Secondary School</strong> | 2018 – 2020</p>
+                <p>Specialized in Computer Science stream, learning the basics of programming and IT fundamentals.</p>
+            </div>
+
+            <div class="edu-card">
+                <h3>Secondary School (10th Grade)</h3>
+                <p><strong>Hindu Higher SecindarySchool</strong> | 2016 – 2018</p>
+                <p>Completed with strong academic performance and interest in computers and problem-solving.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul id="skillList">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>Excel</li>
+            <li>Word</li>
+            <li>JavaScript</li>
+            <li>Communication</li>
+            <li>Problem solving</li>
+            <li>Power BI</li>
+            <li>Power Point</li>
+            <li>Java</li>
+            <li>Git & GitHub</li>
+        </ul>
+        <button id="toggleBtn">⬇</button>
+    </section>
+
+
+    <!-- Study -->
+
+
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="slider-container">
+            <div class="slider" id="projectSlider">
+                <div class="project-card"><a href="https://karthickag18.github.io/gsl/"><b>Gym Website</b></a><br>I am a
+                    Junior Software Developer with a strong interest in web development and data visualization. I have
+                    created small-scale websites, including a Gym Website built using HTML, CSS, and JavaScript, which I
+                    developed by exploring and learning from YouTube tutorials. I have also worked on a Power BI
+                    project, gaining hands-on experience in building data dashboards and reports. In addition, I am
+                    proficient in MS Office tools, which enhance my productivity and presentation skills. I am
+                    passionate about continuous learning and aim to grow into a full-stack developer by building more
+                    real-world projects and expanding my technical expertise.</div>
+                <div class="project-card"><a href="https://karthickag18.github.io/portfolio-website/"><b>Portfolio Website</b></a><br>I created my Portfolio Website
+                    using HTML, CSS, and JavaScript to showcase my skills, education, and projects.During development, I
+                    made use of ChatGPT and AI tools to refine content, improve design ideas, and speed up
+                    problem-solving. This project reflects my journey as a Junior Software Developer who is continuously
+                    learning and building real-world projects to become a Full-Stack Developer.</div>
+                <div class="project-card"><a
+                        href="https://www.linkedin.com/feed/update/urn:li:activity:7360697028953198593/"><b>Power
+                            BI-Dashboard</b></a><br>I developed an interactive Sales Dashboard in Power BI using a
+                    dataset sourced from Kaggle. The dashboard provides insights into key sales metrics such as total
+                    revenue, sales trends, regional performance, and top products. It includes interactive filters and
+                    visualizations that make it easy to analyze data and identify patterns. Through this project, I
+                    gained hands-on experience in data cleaning, data modeling, DAX calculations, and building dynamic
+                    reports. This project helped me strengthen my skills in data visualization and business
+                    intelligence, while also learning how to present raw data in a clear and meaningful way.</div>
+                <div class="project-card"><a href="https://karthickag18.github.io/user/"><b>User Card</b></a><br>I
+                    created a User Card Website where each user’s details are displayed in a clean card format. The
+                    project is fully built using props, which allowed me to pass dynamic data (like name, role, contact
+                    info, etc.) to reusable card components. This helped me practice component-based development and
+                    understand how props work for sharing data between components. The website is responsive, simple,
+                    and designed for scalability so more user cards can be added easily.</div>
+            </div>
+        </div>
+        <button class="prev" id="prevBtn">⬅</button>
+        <button class="next" id="nextBtn">➡</button>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-buttons">
+            <a href="tel:+919345462882" target="_blank" class="contact-btn">
+                <img src="https://img.icons8.com/ios-filled/30/ffffff/phone.png" alt="Call">
+                Call
+            </a>
+            <a href="https://www.linkedin.com/in/karthick-a-b60832238" target="_blank" class="contact-btn">
+                <img src="https://img.icons8.com/ios-filled/30/ffffff/linkedin.png" alt="LinkedIn">
+                LinkedIn
+            </a>
+            <a href="https://github.com/karthickag18" target="_blank" class="contact-btn">
+                <img src="https://img.icons8.com/ios-filled/30/ffffff/github.png" alt="GitHub">
+                GitHub
+            </a>
+            <a href="mailto:karthickag18@email.com" target="_blank" class="contact-btn">
+                <img src="https://img.icons8.com/ios-filled/30/ffffff/email.png" alt="Email">
+                Email
+            </a>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2025 Karthick | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
